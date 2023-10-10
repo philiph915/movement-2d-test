@@ -1,2 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog-animal-cartoon.png","c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/bin/DesktopGL/hedgehog-animal-cartoon.xnb","TextureProcessor","Texture2DContent",24285,161925,0.1433439
+"c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog_transparent_small.png","c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/bin/DesktopGL/hedgehog_transparent_small.xnb","TextureProcessor","Texture2DContent",4729,11861,0.1105301
+"c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog_transparent.png","c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/bin/DesktopGL/hedgehog_transparent.xnb","TextureProcessor","Texture2DContent",32048,171861,0.1165277
+"c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Tiles/GrassNDirt.png","c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/bin/DesktopGL/GrassNDirt.xnb","TextureProcessor","Texture2DContent",3089,41045,0.0027412
