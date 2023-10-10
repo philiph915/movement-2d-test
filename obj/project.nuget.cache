@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DPGeWTAU4vZ7icrsXHZV72Ckyngnk8oPoXGzm4xO2tuT+0dEVFK0akVmIgbsTy656m8sA5PyL0Wf2aKStE2TcA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\phili\\Documents\\MonogameProjects\\movement-2d-test\\movement-2d-test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phili\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\phili\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}

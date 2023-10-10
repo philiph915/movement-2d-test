@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog-animal-cartoon.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>hedgehog-animal-cartoon.png</File>
+  </DestFiles>
+</SourceFileCollection>
