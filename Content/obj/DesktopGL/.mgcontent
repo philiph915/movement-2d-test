@@ -4,11 +4,13 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/DebugFont.spritefont</File>
     <File>c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog_transparent_small.png</File>
     <File>c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Sprites/hedgehog_transparent.png</File>
     <File>c:/Users/phili/Documents/MonogameProjects/movement-2d-test/Content/Tiles/GrassNDirt.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File>hedgehog_transparent_small.png</File>
     <File>hedgehog_transparent.png</File>
     <File>GrassNDirt.png</File>
