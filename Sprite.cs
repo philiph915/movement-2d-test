@@ -20,4 +20,10 @@ public class Sprite
         Globals.SpriteBatch.Draw(_texture, Position, null, Color.White, 0f, Origin, 1f, SpriteEffects.None, 0f);
     }
 
+    public void Draw(Rectangle _sourceRectangle)
+    {
+        //SpriteBatch.Draw(Texture2D texture, Vector2 position, Rectangle? sourceRectangle, Color color, float rotation, Vector2 origin, float scale, SpriteEffects effects, float layerDepth)
+        Globals.SpriteBatch.Draw(_texture, Position, _sourceRectangle, Color.White, 0f, Origin, 1f, SpriteEffects.None, 0f);
+    }
+
 }
