@@ -8,12 +8,13 @@ public class TileMap
     private int _numCols;
     private int _tileWidth;
     private int _tileHeight;
+    private float _gridScale;
     private Texture2D _texture;
     private Rectangle[,] _sourceRectangles;
     private List<Tile> _tileList; // List of Tile objects representing positions and image indices of each tile to be drawn from this tilemap
 
-    // constructor
-    public TileMap(Texture2D texture, int numRows, int numCols, int tileWidth, int tileHeight, List<Tile> tileList)
+    // constructorUS
+    public TileMap(Texture2D texture, int numRows, int numCols, int tileWidth, int tileHeight, float gridScale, List<Tile> tileList)
     {
         _texture    = texture;
         _numRows    = numRows;
@@ -21,6 +22,8 @@ public class TileMap
         _tileHeight = tileHeight;
         _tileWidth  = tileWidth;
         _tileList   = tileList;
+
+        _gridScale  = gridScale; // Tile Grid will be scaled by gridScale, but tile width/height should be specified based on actual image dimensions (for slicing)
 
          _sourceRectangles = SliceTiles();
     }
@@ -55,10 +58,10 @@ public class TileMap
         {
             // Extract Current Tile position and Drawing Rectangle
             drawBoundRect = _sourceRectangles[thisTile._tileMapRowCol.X,thisTile._tileMapRowCol.Y];
-            thisTilePos = new(thisTile._pos.X*_tileWidth,thisTile._pos.Y*_tileHeight);
+            thisTilePos = new(thisTile._pos.X*_tileWidth*_gridScale,thisTile._pos.Y*_tileHeight*_gridScale);
 
             // ADDED IN A SCALE FACTOR TO MAKE THE TILES MORE VISIBLE. YES THIS SCREWS UP THE TILE POSITIONS / COORDINATES 
-            Globals.SpriteBatch.Draw(_texture, thisTilePos, drawBoundRect, Color.White, 0f, new(0,0), 3*1f, SpriteEffects.None, 0f); // Assumes tile origin is top-left corner
+            Globals.SpriteBatch.Draw(_texture, thisTilePos, drawBoundRect, Color.White, 0f, new(0,0), _gridScale*1f, SpriteEffects.None, 0f); // Assumes tile origin is top-left corner
         }
         
 
