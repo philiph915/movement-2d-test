@@ -26,7 +26,7 @@ public class Game1 : Game
        
         // Add Initialization Logic to set window size, graphics settings, pass content to Globals class, and
         // instantiate game manager
-        Globals.WindowSize = new(1024,768);
+        Globals.WindowSize = new(1280,720);
         _graphics.PreferredBackBufferWidth = Globals.WindowSize.X;
         _graphics.PreferredBackBufferHeight = Globals.WindowSize.Y;
         _graphics.ApplyChanges();
@@ -61,7 +61,8 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue); // background color
+        //GraphicsDevice.Clear(Color.CornflowerBlue); // background color
+        GraphicsDevice.Clear(Color.Green);
 
         // TODO: Add your drawing code here
         _gameManager.Draw(); // Draw sprites with the game manager
@@ -76,10 +77,11 @@ public class Game1 : Game
         System.String debugString = null; // Initialize an empty string
         debugString += InputManager.Direction.ToString() + "\n"; // Add Direction Input
         debugString += _gameManager._player.Position.ToString() + "\n"; // Add Player Position
+        debugString += "delX: " + _gameManager.delX.ToString() + "delY: " + _gameManager.delY.ToString() + "\n"; // Add Camera Deltas
 
         // Render Debug Text
         sb.Begin();
-        sb.DrawString(_debugFont,debugString,new(0,0),Color.Black);
+        sb.DrawString(_debugFont,debugString,new(0,0),Color.Blue);
         sb.End();
 
     }
